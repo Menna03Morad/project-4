@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>project4</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+    <header>
+         <div class="container-st">
+             <div class="header-content">
+                <a href="index.html" class="brand">Online shopping</a>
+              <nav>
+                  <ul id="links">
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="register.html">Register</a></li>
+                  </ul>
+                  <ul id="user_info">
+                    <li><a href="#" id="user"></a></li>
+                  </ul>
+              </nav>
+             </div><!-- header-content -->
+         </div> <!-- container-st -->
+    </header>
+    <div class="search-container">
+        <select id="searchOption" class="search-dropdown">
+            <option value="name">Search by Name</option>
+            <option value="category">Search by Category</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+    <hr>
+    <main>
+        <div class="section-items">
+            <div class="parent-items">
+                <div class="item1 item-template" style="display: none;">
+                    <img src="" alt="item">
+                    <div class="info-item">
+                        <h4>Name: </h4>
+                        <p>Price : </p>
+                        <p>Category : </p>
+                    </div>
+                    <div class="fav-cart">
+                        <button class="cart-btn">Add to cart</button>
+                        <i class="fas fa-heart fav-h"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<script src="js/script.js"></script>
+</body>
+</html>

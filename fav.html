@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Items</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fav.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header>
+        <div class="container-st">
+            <div class="header-content">
+                <a href="index.html" class="brand">Online Shopping</a>
+                <nav>
+                    <ul class="cart-info">
+                        <a class="logout" href="login.html">Logout</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="products-container"></div>
+        <p id="total-price">Total Price: $0.00</p>
+    </main>
+    <br>
+    <hr>
+
+    <section class="favorites-section">
+        <div class="last">
+        <h2 class="fav-hh">Favourite</h2>
+        <div class="fasel"></div>
+    </div>
+        <div id="favorites-container"></div>
+
+        <div id="favorites-slider" class="swiper-container">
+            <div class="swiper-wrapper" id="favorites-wrapper"></div>
+            <div class=" swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/fav.js"></script>
+</body>
+</html>

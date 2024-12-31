@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+    <header>
+        <div class="container-st">
+            <div class="header-content">
+                <a href="index.html" class="brand">Online shopping</a>
+                <nav>
+                    <ul class="cart-info">
+                        <i class="fa-solid fa-cart-shopping carrt"></i>
+                        <span id="cart-count">0</span>
+                        <p>Cart</p>
+                        <i class="fa-solid fa-caret-down carttt" id="cart-toggle"></i>
+                        <a href="login.html">Logout</a>
+                    </ul>
+                    <ul id="user_info">
+                        <li><a href="#" id="user"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="welcome-container">
+                <span id="welcome-message"></span>
+            </div>
+        </div>
+    </header>
+    <div id="cart-items-container" class="cart-dropdown" style="display: none;">
+        <h3>Your Items:</h3>
+        <ul id="cart-items"></ul>
+        <a href="fav.html" id="view-all-products">View all products</a>
+    </div>
+    
+
+    <div class="search-container">
+        <select id="searchOption" class="search-dropdown">
+            <option value="name">Search by Name</option>
+            <option value="category">Search by Category</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+
+    <hr>
+    <main>
+        <div class="section-items">
+            <div class="parent-items">
+                <div class="item1 item-template" style="display: none;">
+                    <img src="" alt="item">
+                    <div class="info-item">
+                        <h4>Name: </h4>
+                        <p>Price : </p>
+                        <p>Category : </p>
+                    </div>
+                    <div class="fav-cart">
+                        <button class="cart-btn">Add to cart</button>
+                        <i class="fas fa-heart fav-h"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
